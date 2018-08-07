@@ -34,7 +34,8 @@ cabal.sandbox.config
 After installing Postgres, run:
 
 ```
-createuser {{name}} --password {{name}} --superuser
+createuser {{name}} --pwprompt --superuser
+# Enter password {{name}} when prompted
 createdb {{name}}
 createdb {{name}}_test
 ```
